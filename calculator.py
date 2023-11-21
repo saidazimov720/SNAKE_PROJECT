@@ -15,3 +15,10 @@ def calculate():
         entry.delete(0, tk.END)
         entry.insert(tk.END, "error")
 
+def clear_entry():
+    entry.delete(0, tk.END)
+    
+root = tk.Tk()
+root.title("calculator")
+
+entry = tk.Entry
