@@ -36,3 +36,11 @@ col_val = 0
 
 for button in buttons:
     tk.Button(root, text=button, width=5, height=2, command=lambda b=button: on_button_click(b) if b != '=' else calculate()).grid(row=row_val, column=col_val)
+    col_val +=1
+    if col_val >3:
+        col_val = 0
+        row_val +=1
+
+tk.button(root, text="C", width=5, height=2, command=clear_entry).grid(row=row_val, column=col_val)
+
+root.mainloop()
