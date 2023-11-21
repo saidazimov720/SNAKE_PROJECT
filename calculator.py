@@ -12,4 +12,6 @@ def calculate():
         entry.delete(0, tk.END)
         entry.insert(tk.END, str(result))
     except Exception as e:
-        entry.delete
+        entry.delete(0, tk.END)
+        entry.insert(tk.END, "error")
+
