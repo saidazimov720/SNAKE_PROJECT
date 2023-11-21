@@ -21,4 +21,13 @@ def clear_entry():
 root = tk.Tk()
 root.title("calculator")
 
-entry = tk.Entry
+entry = tk.Entry(root, width=20, font=("Arial", 16))
+entry.grid(row=0, column=0, columnspan=4)
+
+buttons = [
+    '7', '8', '9', '/',
+    '4', '5', '6', '*', 
+    '1', '2', '3', '-',
+    '0', '.', '=', '+'
+]
+
