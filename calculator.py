@@ -31,3 +31,8 @@ buttons = [
     '0', '.', '=', '+'
 ]
 
+row_val = 1
+col_val = 0
+
+for button in buttons:
+    tk.Button(root, text=button, width=5, height=2, command=lambda b=button: on_button_click(b) if b != '=' else calculate()).grid(row=row_val, column=col_val)
